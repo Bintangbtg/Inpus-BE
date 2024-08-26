@@ -42,7 +42,7 @@ API ini digunakan untuk mengelola data tryout,golden ticket dan lain lain termas
 
 ### 1. **Register User**
 
-   - **URL**: `/register`
+   - **URL**: `https://beinpus.vercel.app/register`
    - **Method**: `POST`
    - **Deskripsi**: Mendaftarkan pengguna baru.
    - **Request Body**:
@@ -56,7 +56,7 @@ API ini digunakan untuk mengelola data tryout,golden ticket dan lain lain termas
 
 ### 2. **Login User**
 
-   - **URL**: `/login`
+   - **URL**: `https://beinpus.vercel.app/login`
    - **Method**: `POST`
    - **Deskripsi**: Melakukan login dan mendapatkan token JWT.
    - **Request Body**:
@@ -69,7 +69,7 @@ API ini digunakan untuk mengelola data tryout,golden ticket dan lain lain termas
 
 ### 3. **Create Tryout**
 
-   - **URL**: `/tryout/post`
+   - **URL**: `https://beinpus.vercel.app/tryout/post`
    - **Method**: `POST`
    - **Deskripsi**: Membuat data tryout baru.
    - **Headers**: 
@@ -86,19 +86,19 @@ API ini digunakan untuk mengelola data tryout,golden ticket dan lain lain termas
 
 ### 4. **Get All Tryouts**
 
-   - **URL**: `/tryout`
+   - **URL**: `https://beinpus.vercel.app/tryout`
    - **Method**: `GET`
    - **Deskripsi**: Mengambil semua data tryout.
 
 ### 5. **Get Tryout by Name**
 
-   - **URL**: `/tryout/:name`
+   - **URL**: `https://beinpus.vercel.app/tryout/{search-query}`
    - **Method**: `GET`
    - **Deskripsi**: Mengambil data tryout berdasarkan nama.
 
 ### 6. **Update Tryout**
 
-   - **URL**: `/tryout/:tryout_id`
+   - **URL**: `https://beinpus.vercel.app/tryout/{search-query}`
    - **Method**: `PUT`
    - **Deskripsi**: Memperbarui data tryout berdasarkan `tryout_id`.
    - **Headers**: 
@@ -115,7 +115,7 @@ API ini digunakan untuk mengelola data tryout,golden ticket dan lain lain termas
 
 ### 7. **Delete Tryout**
 
-   - **URL**: `/tryout/:tryout_id`
+   - **URL**: `https://beinpus.vercel.app/tryout/{search-query}`
    - **Method**: `DELETE`
    - **Deskripsi**: Menghapus data tryout berdasarkan `tryout_id`.
    - **Headers**: 
@@ -123,7 +123,7 @@ API ini digunakan untuk mengelola data tryout,golden ticket dan lain lain termas
 
 ### 8. **Create Golden Ticket**
 
-   - **URL**: `/goldenticket/post`
+   - **URL**: `https://beinpus.vercel.app/goldenticket/post`
    - **Method**: `POST`
    - **Deskripsi**: Membuat data Golden Ticket baru.
    - **Headers**: 
@@ -141,19 +141,19 @@ API ini digunakan untuk mengelola data tryout,golden ticket dan lain lain termas
 
 ### 9. **Get All Golden Ticket**
 
-   - **URL**: `/goldenticket`
+   - **URL**: `https://beinpus.vercel.app/goldenticket`
    - **Method**: `GET`
    - **Deskripsi**: Mengambil semua data Golden Ticket.
 
 ### 10. **Get Golden Ticket by Name**
 
-   - **URL**: `/goldenticket/:name`
+   - **URL**: `https://beinpus.vercel.app/goldenticket/{search-query}`
    - **Method**: `GET`
    - **Deskripsi**: Mengambil data Golden Ticket berdasarkan nama.
 
 ### 11. **Update Golden Ticket**
 
-   - **URL**: `/goldenticket/:golden_id`
+   - **URL**: `https://beinpus.vercel.app/goldenticket/{search-query}`
    - **Method**: `PUT`
    - **Deskripsi**: Memperbarui data tryout berdasarkan `golden_id`.
    - **Headers**: 
@@ -171,13 +171,13 @@ API ini digunakan untuk mengelola data tryout,golden ticket dan lain lain termas
 
 ### 7. **Delete Golden Ticket**
 
-   - **URL**: `/goldenticket/:golden_id`
+   - **URL**: `https://beinpus.vercel.app/goldenticket/{search-query}`
    - **Method**: `DELETE`
    - **Deskripsi**: Menghapus data Golden Ticket berdasarkan `golden_id`.
    - **Headers**: 
      - `Authorization: Bearer <token>`
 
-<br>
+<br><br>
 <p align="center">
   <b>Let's Connect and Build Something Amazing Together!</b>
 </p>
