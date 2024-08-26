@@ -1,10 +1,10 @@
 import { Application, Router } from "express";
-import { GoldenTicket } from "./golden-ticket";
+import { Golden } from "./golden-ticket";
 import { Tryout } from "./tryout";
 import {auth} from "./auth";
 
 const _routes: Array<[string, Router]> = [
-    ['/goldenticket', GoldenTicket],
+    ['/goldenticket', Golden],
     ['/tryout', Tryout],
     ['/', auth]
 ]

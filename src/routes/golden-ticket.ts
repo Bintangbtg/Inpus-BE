@@ -1,7 +1,11 @@
-import { Router, Request, Response, NextFunction } from "express";
+import { Router} from "express";
+import { createGolden, deleteGolden, editGolden, getGolden, getGoldenByName } from "../controllers/golden-ticket.controller";
+import { authMiddleware } from '../middleware/auth.middleware';
 
-export const GoldenTicket: Router = Router();
+export const Golden: Router = Router();
 
-GoldenTicket.get("/", (req: Request, res: Response, next: NextFunction) => {
-    res.status(200).send({data: "Hello world"});
-});
+Golden.get("/", getGolden)
+Golden.get("/:name", getGoldenByName)
+Golden.post("/post", authMiddleware, createGolden)
+Golden.put("/:id", authMiddleware, editGolden)
+Golden.delete("/:id", authMiddleware, deleteGolden)
