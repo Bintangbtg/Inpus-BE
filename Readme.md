@@ -190,5 +190,5 @@ API ini digunakan untuk mengelola data tryout,golden ticket dan lain lain termas
 </div>
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/yourusername">Your Name</a>
+  Made with ❤️ by <a href="https://github.com/bintangbtg">Bintang Btg</a>
 </p>
