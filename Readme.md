@@ -92,13 +92,13 @@ API ini digunakan untuk mengelola data tryout,golden ticket dan lain lain termas
 
 ### 5. **Get Tryout by Name**
 
-   - **URL**: `/tryout/:name`
+   - **URL**: `/tryout/<name>`
    - **Method**: `GET`
    - **Deskripsi**: Mengambil data tryout berdasarkan nama.
 
 ### 6. **Update Tryout**
 
-   - **URL**: `/tryout/:tryout_id`
+   - **URL**: `/tryout/<tryout_id>`
    - **Method**: `PUT`
    - **Deskripsi**: Memperbarui data tryout berdasarkan `tryout_id`.
    - **Headers**: 
@@ -115,7 +115,7 @@ API ini digunakan untuk mengelola data tryout,golden ticket dan lain lain termas
 
 ### 7. **Delete Tryout**
 
-   - **URL**: `/tryout/:tryout_id`
+   - **URL**: `/tryout/<tryout_id>`
    - **Method**: `DELETE`
    - **Deskripsi**: Menghapus data tryout berdasarkan `tryout_id`.
    - **Headers**: 
@@ -147,13 +147,13 @@ API ini digunakan untuk mengelola data tryout,golden ticket dan lain lain termas
 
 ### 10. **Get Golden Ticket by Name**
 
-   - **URL**: `/goldenticket/:name`
+   - **URL**: `/goldenticket/<name>`
    - **Method**: `GET`
    - **Deskripsi**: Mengambil data Golden Ticket berdasarkan nama.
 
 ### 11. **Update Golden Ticket**
 
-   - **URL**: `/goldenticket/:golden_id`
+   - **URL**: `/goldenticket/<golden_id>`
    - **Method**: `PUT`
    - **Deskripsi**: Memperbarui data tryout berdasarkan `golden_id`.
    - **Headers**: 
@@ -171,7 +171,7 @@ API ini digunakan untuk mengelola data tryout,golden ticket dan lain lain termas
 
 ### 7. **Delete Golden Ticket**
 
-   - **URL**: `/goldenticket/:golden_id`
+   - **URL**: `/goldenticket/<golden_id>`
    - **Method**: `DELETE`
    - **Deskripsi**: Menghapus data Golden Ticket berdasarkan `golden_id`.
    - **Headers**: 
