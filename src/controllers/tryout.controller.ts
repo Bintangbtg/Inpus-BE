@@ -34,29 +34,31 @@ export const getTryout = async (req: Request, res: Response) => {
 };
 
 export const getTryoutByName = async (req: Request, res: Response) => {
-    const tryouts: any = await getTryoutFromDB()
+  const tryouts: any = await getTryoutFromDB();
 
-    const {
-      params: { name }
-    } = req
+  const {
+    params: { name }
+  } = req;
 
-    if (name) {
-      const filtertryout = tryouts.filter((tryout: TryoutInterface) => {
-        if (tryout.nama === name) {
-          return tryout
-        }
-      })
-      if (filtertryout.length === 0) {
-        logger.info('Data not found')
-        return res.status(404).send({ status: false, statusCode: 404, data: {} })
-      }
-      logger.info('Success get tryout data')
-      return res.status(200).send({ status: true, statusCode: 200, data: filtertryout[0] })
+  if (name) {
+    const normalizedInputName = name.toLowerCase().replace(/\s+/g, '');
+
+    const filteredTryouts = tryouts.filter((tryout: TryoutInterface) => {
+      const normalizedTryoutName = tryout.nama.toLowerCase().replace(/\s+/g, '');
+      return normalizedTryoutName.includes(normalizedInputName);
+    });
+
+    if (filteredTryouts.length === 0) {
+      logger.info('Data not found');
+      return res.status(404).send({ status: false, statusCode: 404, data: {} });
     }
 
-    logger.info('Success get tryout data')
-    return res.status(200).send({ status: true, statusCode: 200, data: tryouts 
-    })
+    logger.info('Success get tryout data');
+    return res.status(200).send({ status: true, statusCode: 200, data: filteredTryouts });
+  }
+
+  logger.info('Success get tryout data');
+  return res.status(200).send({ status: true, statusCode: 200, data: tryouts });
 };
 
 export const editTryout = async (req: Request, res: Response) => {
